@@ -1,15 +1,13 @@
 # Construire sa Librairies UI
 
-> [!ALERT]
+> [!IMPORTANT]
 > Dans ce TD nous n'allons pas utiliser Shadcn/UI comme une boîte noire, mais nous allons **reconstruire un écosystème inspiré de sa philosophie**.
 
 ## Etape 1 : Initialisation du projet avec Vite et Tailwind CSS.
 
 ➡️ Suivre l'installation de Vite et Tailwind CSS : [doc](https://tailwindcss.com/docs/installation/using-vite)
 
-Ne pas oublier d'ajouter **prettier** pour le formatage du code.
-
-[doc](https://tailwindcss.com/docs/editor-setup#class-sorting-with-prettier)
+➡️ Ne pas oublier d'ajouter **prettier** pour le formatage du code : [doc](https://tailwindcss.com/docs/editor-setup#class-sorting-with-prettier)
 
 ---
 
