@@ -32,30 +32,45 @@ La composition est un pattern fondamental en React qui consiste à construire de
 </Card>
 ```
 
+### Composition de composants complexes
+
 ```tsx
-// Composant parent avec contexte visuel
-export function Card({ children, shadow }: CardProps) {
+// UserCard compose : Avatar + Card + Badge
+export function UserCard({ name, email, role, avatarSrc, status }) {
   return (
-    <div className={cn("rounded-lg border bg-white", shadowClasses[shadow])}>
-      {children}
-    </div>
+    <Card padding="md" shadow="sm">
+      <div className="flex items-center gap-3">
+        <div className="relative">
+          <Avatar src={avatarSrc} alt={name} fallback={name.slice(0, 2)} />
+          {status && <StatusIndicator status={status} />}
+        </div>
+        <div className="flex-1">
+          <p className="font-medium">{name}</p>
+          {email && <p className="text-sm text-gray-500">{email}</p>}
+        </div>
+        {role && <Badge variant="primary">{role}</Badge>}
+      </div>
+    </Card>
   );
 }
+```
 
-// Sous-composants pour la structure
-export function CardHeader({ children }: { children: ReactNode }) {
-  return <div className="p-4 border-b">{children}</div>;
-}
+## Exercice d'application :
 
-export function CardTitle({ children }: { children: ReactNode }) {
-  return <h3 className="text-lg font-semibold">{children}</h3>;
-}
+Recherchez un **design system** sur Figma ou autre (Twitter, shad'cn, etc.)
+Créer des composants UI de base (Button, Avatar, etc.) et des composants complexes (Card, Modal, etc.) en utilisant la composition.
 
-export function CardContent({ children }: { children: ReactNode }) {
-  return <div className="p-4">{children}</div>;
-}
+> [!WARNING]
+> Attention vous ne devez pas installer de librairie de composants, vous devez créer vos propres composants à partir de zéro.
 
-export function CardFooter({ children }: { children: ReactNode }) {
-  return <div className="p-4 border-t flex gap-2">{children}</div>;
-}
+```bash
+# Structure du dossier
+src/
+└── components/
+    └── ui/
+        ├── Avatar.tsx
+        ├── Button.tsx
+        ├── Card.tsx      # contient Card, CardHeader, CardContent, etc.
+        └── Modal.tsx
+
 ```
