@@ -34,7 +34,8 @@ Ce premier cercle regroupe les outils qui enrichissent ou révolutionnent la fa�
 | Excellente maîtrise du style, courbe d'apprentissage progressive | Les fichiers HTML/JSX peuvent devenir surchargés de classes utilitaires       |
 | Fichiers finaux très optimisés en production (tree-shaking)      | Pas de composants "prêts à l'emploi", tout est à construire de zéro           |
 
-**🎯 Cas d'usage idéal :** Landing pages très customisées, projets avec un branding fort nécessitant un design sur-mesure de A à Z.
+> [!TIP]
+> **Cas d'usage idéal :** Landing pages très customisées, projets avec un branding fort nécessitant un design sur-mesure de A à Z.
 
 ---
 
@@ -67,7 +68,8 @@ Ici, l'objectif n'est pas le style visuel, mais **l'accessibilité**, **l'intera
 | Gain de temps sur la logique complexe (Dropdowns, Modals, Tooltips) | Nécessite obligatoirement une couche de style par-dessus (CSS, Tailwind…) |
 | Réduit la dette technique liée aux comportements interactifs        | Courbe d'apprentissage pour comprendre la structure des "primitives"      |
 
-**🎯 Cas d'usage idéal :** Construire son propre Design System "from scratch" en entreprise, pour des équipes qui disposent de leurs propres designers UI.
+> [!TIP]
+> **Cas d'usage idéal :** Construire son propre Design System "from scratch" en entreprise, pour des équipes qui disposent de leurs propres designers UI.
 
 ---
 
@@ -92,7 +94,8 @@ Le troisième cercle correspond aux bibliothèques qui fournissent une expérien
 | Tout est inclus : structure, style, interactions de base | **Peu flexible** : sortir du design prévu revient à "lutter contre le framework" |
 | Parfait pour des prototypes rapides et back-offices      | Bundle souvent plus lourd si non optimisé                                        |
 
-**🎯 Cas d'usage idéal :** Hackathons, MVP (Minimum Viable Products) développés dans l'urgence, back-offices internes où le design n'est pas prioritaire.
+> [!TIP]
+> **Cas d'usage idéal :** Hackathons, MVP (Minimum Viable Products) développés dans l'urgence, back-offices internes où le design n'est pas prioritaire.
 
 ---
 
@@ -143,7 +146,8 @@ Il combine concrètement les forces des 3 cercles :
 | Flexibilité visuelle totale, le rendu est 100% modifiable                        | Orienté vers des frameworks modernes (React, Vue, Svelte)                              |
 | **Zéro gonflement :** Vous ne générez que les composants que vous utilisez       |                                                                                        |
 
-**🎯 Cas d'usage idéal :** Web Apps modernes (SaaS, dashboards), pérennes et évolutives, où l'on recherche un niveau professionnel sur l'accessibilité tout en gardant une liberté de design totale.
+> [!TIP]
+> **🎯 Cas d'usage idéal :** Web Apps modernes (SaaS, dashboards), pérennes et évolutives, où l'on recherche un niveau professionnel sur l'accessibilité tout en gardant une liberté de design totale.
 
 ---
 
