@@ -4,8 +4,9 @@
 
 ## ➡️ Exercice 0 : Les Fondamentaux
 
-> [!TIPS]
+> [!NOTE]
 > **Objectif** : Comprendre le composant `motion` et les propriétés de base.
+>
 > Consignes :
 >
 > - Créer un titre qui apparaît avec un fondu et un changement d'échelle.
@@ -84,8 +85,9 @@ Pourquoi utiliser les variants :
 
 ## ➡️ Exercice 1 : Orchestration (Stagger)
 
-> [!TIPS]
+> [!NOTE]
 > **Objectif** : Animer plusieurs éléments de manière séquentielle.
+>
 > Consignes :
 >
 > - Créer un conteneur parent et deux enfants.
@@ -124,9 +126,10 @@ visible: {
 
 ## ➡️ Exercice 2 : Keyframes et Boucles
 
-> [!TIPS]
+> [!NOTE]
 > **Objectif** : Créer des animations cycliques
 > complexes.
+>
 > Consignes :
 >
 > - Utiliser des tableaux de valeurs (keyframes) pour `scale`, `rotate` et `borderRadius`.
@@ -167,8 +170,9 @@ animate={{
 
 ## ➡️ Exercice 3 : Interactions (Hover & Tap)
 
-> [!TIPS]
+> [!NOTE]
 > **Objectif** : Rendre l'interface réactive au curseur et au clic.
+>
 > Consignes :
 >
 > - Créer un bouton interactif utilisant `whileHover` et `whileTap`.
@@ -211,8 +215,9 @@ const buttonVariants: Variants = {
 
 ## ➡️ Exercice 4 : Le Drag (Glisser-Déposer)
 
-> [!TIPS]
+> [!NOTE]
 > **Objectif** : Manipuler des éléments à la souris.
+>
 > Consignes :
 >
 > - Rendre un carré déplaçable avec la propriété `drag`.
@@ -247,8 +252,9 @@ const boxVariants: Variants = {
 
 ## ➡️ Exercice 5 : Progression au Scroll
 
-> [!TIPS]
+> [!NOTE]
 > **Objectif** : Lier une animation au défilement de la page.
+>
 > Consignes :
 >
 > - Utiliser le hook `useScroll` pour récupérer la progression (`scrollYProgress`).
@@ -307,8 +313,9 @@ useMotionValueEvent(scrollYProgress, "change", (latest) => {
 
 ## ➡️ Exercice 6 : Animation SVG
 
-> [!TIPS]
+> [!NOTE]
 > **Objectif** : Animer des tracés vectoriels
+>
 > Consignes :
 >
 > - Utiliser `pathLength` pour faire se dessiner une icône SVG.
@@ -353,8 +360,9 @@ const svgIconVariants: Variants = {
 
 ## ➡️ Exercice 7 : Scroll Reveal
 
-> [!TIPS]
+> [!NOTE]
 > **Objectif** : Déclencher des animations à l'entrée dans l'écran.
+>
 > Consignes :
 >
 > - Utiliser `whileInView` au lieu de `animate`.
@@ -390,8 +398,9 @@ const variants = {
 
 ## ➡️ Exercice 8 : AnimatePresence (Sortie)
 
-> [!TIPS]
+> [!NOTE]
 > **Objectif** : Animer la disparition d'un élément.
+>
 > Consignes :
 >
 > - Utiliser le composant `<AnimatePresence>`.
@@ -411,8 +420,9 @@ Sans `AnimatePresence`, React retire le composant immédiatement. Avec `AnimateP
 
 ## ➡️ Exercice 9 : Layout Animations
 
-> [!TIPS]
+> [!NOTE]
 > **Objectif** : Animer les changements de structure CSS.
+>
 > Consignes :
 >
 > - Utiliser la prop `layout`.
@@ -430,8 +440,9 @@ La prop `layout` anime automatiquement les changements de taille/position/rayon 
 
 ## ➡️ Exercice 10 : Shared Layout (`layoutId`)
 
-> [!TIPS]
+> [!NOTE]
 > **Objectif** : Créer des transitions fluides entre composants distincts.
+>
 > Consignes :
 >
 > - Créer un système d'onglets (tabs).
@@ -448,8 +459,9 @@ Deux éléments avec le même `layoutId` sont interprétés comme le même objet
 
 ## ➡️ Exercice 11 : Transformations de valeurs (`useTransform`)
 
-> [!TIPS]
+> [!NOTE]
 > **Objectif** : Créer des effets de parallaxe ou de liaison complexe.
+>
 > Consignes :
 >
 > - Utiliser `useTransform` pour lier la progression du scroll à la rotation et à l'opacité d'une carte.
@@ -466,8 +478,9 @@ Deux éléments avec le même `layoutId` sont interprétés comme le même objet
 
 ## ➡️ Exercice 12 : Listes réordonnables (`Reorder`)
 
-> [!TIPS]
+> [!NOTE]
 > **Objectif** : Créer une liste drag-and-drop fonctionnelle.
+>
 > Consignes :
 >
 > - Utiliser `<Reorder.Group>` et `<Reorder.Item>`.
@@ -485,8 +498,9 @@ Deux éléments avec le même `layoutId` sont interprétés comme le même objet
 
 ## ➡️ Exercice 13 : Text Animation (Par caractère)
 
-> [!TIPS]
+> [!NOTE]
 > **Objectif** : Animer un texte lettre par lettre.
+>
 > Consignes :
 >
 > - Découper un texte en tableau de caractères.
